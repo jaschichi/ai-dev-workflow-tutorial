@@ -108,10 +108,10 @@ description: "Task list for Sales Dashboard implementation"
 
 ### Implementation for User Story 4
 
-- [ ] T025 [US4] Write `region_summary(df)` in `data.py` that groups by `region`, sums `total_amount`, and returns a `pd.Series` sorted descending
-- [ ] T026 [US4] Write `region_chart(region_series)` in `charts.py` that returns a `go.Figure` bar chart using `template="plotly_dark"` with title "Sales by Region"
-- [ ] T027 [US4] Refactor `app.py` to place `category_chart` and `region_chart` side-by-side using `st.columns(2)`
-- [ ] T028 [US4] Wire `region_summary()` + `region_chart()` into the second column in `app.py`
+- [x] T025 [US4] Write `region_summary(df)` in `data.py` that groups by `region`, sums `total_amount`, and returns a `pd.Series` sorted descending
+- [x] T026 [US4] Write `region_chart(region_series)` in `charts.py` that returns a `go.Figure` bar chart using `template="plotly_dark"` with title "Sales by Region"
+- [x] T027 [US4] Refactor `app.py` to place `category_chart` and `region_chart` side-by-side using `st.columns(2)`
+- [x] T028 [US4] Wire `region_summary()` + `region_chart()` into the second column in `app.py`
 
 **Checkpoint**: `streamlit run app.py` → category and region bar charts displayed in a two-column row, both dark-themed and sorted.
 
@@ -121,10 +121,10 @@ description: "Task list for Sales Dashboard implementation"
 
 **Purpose**: Visual consistency and portfolio readiness across all user stories.
 
-- [ ] T029 [P] Add descriptive chart title to each chart function (`sales_trend_chart`, `category_chart`, `region_chart`) in `charts.py` if not already set
-- [ ] T030 [P] Add currency hover tooltip format (`"$%{y:,.0f}"`) to all three chart functions in `charts.py`
-- [ ] T031 Verify zero console warnings or deprecation notices during `streamlit run app.py` (check terminal output)
-- [ ] T032 Run quickstart.md validation checklist end-to-end and confirm all items pass
+- [x] T029 [P] Add descriptive chart title to each chart function (`sales_trend_chart`, `category_chart`, `region_chart`) in `charts.py` if not already set
+- [x] T030 [P] Add currency hover tooltip format (`"$%{y:,.0f}"`) to all three chart functions in `charts.py`
+- [x] T031 Verify zero console warnings or deprecation notices during `streamlit run app.py` (check terminal output)
+- [x] T032 Run quickstart.md validation checklist end-to-end and confirm all items pass
 
 ---
 

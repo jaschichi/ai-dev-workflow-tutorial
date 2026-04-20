@@ -100,3 +100,7 @@ def monthly_trend(df):
 
 def category_summary(df):
     return df.groupby("category")["total_amount"].sum().sort_values(ascending=False)
+
+
+def region_summary(df):
+    return df.groupby("region")["total_amount"].sum().sort_values(ascending=False)
