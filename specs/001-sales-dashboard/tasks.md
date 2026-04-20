@@ -92,9 +92,9 @@ description: "Task list for Sales Dashboard implementation"
 
 ### Implementation for User Story 3
 
-- [ ] T022 [US3] Write `category_summary(df)` in `data.py` that groups by `category`, sums `total_amount`, and returns a `pd.Series` sorted descending
-- [ ] T023 [US3] Write `category_chart(category_series)` in `charts.py` that returns a `go.Figure` horizontal or vertical bar chart using `template="plotly_dark"` with title "Sales by Category"
-- [ ] T024 [US3] Wire `category_summary()` + `category_chart()` into `app.py` and render with `st.plotly_chart()`
+- [x] T022 [US3] Write `category_summary(df)` in `data.py` that groups by `category`, sums `total_amount`, and returns a `pd.Series` sorted descending
+- [x] T023 [US3] Write `category_chart(category_series)` in `charts.py` that returns a `go.Figure` horizontal or vertical bar chart using `template="plotly_dark"` with title "Sales by Category"
+- [x] T024 [US3] Wire `category_summary()` + `category_chart()` into `app.py` and render with `st.plotly_chart()`
 
 **Checkpoint**: `streamlit run app.py` → bar chart with 5 categories (Electronics, Audio, Wearables, Smart Home, Accessories) sorted by revenue, dark theme.
 

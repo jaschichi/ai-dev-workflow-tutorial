@@ -96,3 +96,7 @@ def monthly_trend(df):
     )
     series.index = series.index.astype(str)
     return series
+
+
+def category_summary(df):
+    return df.groupby("category")["total_amount"].sum().sort_values(ascending=False)

@@ -3,6 +3,21 @@
 import plotly.graph_objects as go
 
 
+def category_chart(category_series):
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        x=category_series.index.tolist(),
+        y=category_series.values.tolist(),
+    ))
+    fig.update_layout(
+        title="Sales by Category",
+        xaxis_title="Category",
+        yaxis_title="Revenue ($)",
+        template="plotly_dark",
+    )
+    return fig
+
+
 def sales_trend_chart(monthly_series):
     fig = go.Figure()
     fig.add_trace(go.Scatter(
