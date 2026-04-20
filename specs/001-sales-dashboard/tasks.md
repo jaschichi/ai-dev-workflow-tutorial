@@ -37,14 +37,14 @@ description: "Task list for Sales Dashboard implementation"
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete.
 
-- [ ] T006 Write product catalogue constant (dict: category → list of `(product, unit_price)` tuples covering all 5 categories and 15 products) in `data.py`
-- [ ] T007 [P] Write `_sample_dates(rng, n)` helper that returns `n` random `datetime.date` objects sampled uniformly from 2024-01-01 – 2024-12-31 in `data.py`
-- [ ] T008 Write `generate_data(seed=42)` function skeleton: initialize `numpy.random.default_rng(seed)` and call `_sample_dates` in `data.py`
-- [ ] T009 Write order_id column generation (`f"ORD-{i:06d}"` for i in range(n)) inside `generate_data()` in `data.py`
-- [ ] T010 Write category, product, and region random selection (uniform choice using rng) inside `generate_data()` in `data.py`
-- [ ] T011 Write quantity generation (`rng.integers(1, 6)` per row) and unit_price lookup from product catalogue inside `generate_data()` in `data.py`
-- [ ] T012 Write `total_amount` column computation (`quantity × unit_price`) and return final `pd.DataFrame` with 8 columns from `generate_data()` in `data.py`
-- [ ] T013 Manually validate `generate_data()` returns a DataFrame with columns `[date, order_id, product, category, region, quantity, unit_price, total_amount]` and approximately 1,000 rows
+- [x] T006 Write product catalogue constant (dict: category → list of `(product, unit_price)` tuples covering all 5 categories and 15 products) in `data.py`
+- [x] T007 [P] Write `_sample_dates(rng, n)` helper that returns `n` random `datetime.date` objects sampled uniformly from 2024-01-01 – 2024-12-31 in `data.py`
+- [x] T008 Write `generate_data(seed=42)` function skeleton: initialize `numpy.random.default_rng(seed)` and call `_sample_dates` in `data.py`
+- [x] T009 Write order_id column generation (`f"ORD-{i:06d}"` for i in range(n)) inside `generate_data()` in `data.py`
+- [x] T010 Write category, product, and region random selection (uniform choice using rng) inside `generate_data()` in `data.py`
+- [x] T011 Write quantity generation (`rng.integers(1, 6)` per row) and unit_price lookup from product catalogue inside `generate_data()` in `data.py`
+- [x] T012 Write `total_amount` column computation (`quantity × unit_price`) and return final `pd.DataFrame` with 8 columns from `generate_data()` in `data.py`
+- [x] T013 Manually validate `generate_data()` returns a DataFrame with columns `[date, order_id, product, category, region, quantity, unit_price, total_amount]` and approximately 1,000 rows
 
 **Checkpoint**: `python -c "from data import generate_data; df = generate_data(); print(df.shape, df.columns.tolist())"` prints `(1000, 8)` with correct column names.
 
