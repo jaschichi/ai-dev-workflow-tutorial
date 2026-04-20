@@ -76,9 +76,9 @@ description: "Task list for Sales Dashboard implementation"
 
 ### Implementation for User Story 2
 
-- [ ] T019 [US2] Write `monthly_trend(df)` in `data.py` that groups by month period (`df["date"].dt.to_period("M")`), sums `total_amount`, and returns a 12-element `pd.Series` with string month labels as index
-- [ ] T020 [US2] Write `sales_trend_chart(monthly_series)` in `charts.py` that returns a `go.Figure` line chart using `template="plotly_dark"` with x-axis label "Month" and y-axis label "Revenue ($)"
-- [ ] T021 [US2] Wire `monthly_trend()` + `sales_trend_chart()` into `app.py` and render with `st.plotly_chart(fig, use_container_width=True)`
+- [x] T019 [US2] Write `monthly_trend(df)` in `data.py` that groups by month period (`df["date"].dt.to_period("M")`), sums `total_amount`, and returns a 12-element `pd.Series` with string month labels as index
+- [x] T020 [US2] Write `sales_trend_chart(monthly_series)` in `charts.py` that returns a `go.Figure` line chart using `template="plotly_dark"` with x-axis label "Month" and y-axis label "Revenue ($)"
+- [x] T021 [US2] Wire `monthly_trend()` + `sales_trend_chart()` into `app.py` and render with `st.plotly_chart(fig, use_container_width=True)`
 
 **Checkpoint**: `streamlit run app.py` → line chart with 12 monthly points visible, dark background, correct axis labels.
 

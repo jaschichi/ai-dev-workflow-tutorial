@@ -86,3 +86,13 @@ def kpi_metrics(df):
         "total_sales": df["total_amount"].sum(),
         "total_orders": df["order_id"].nunique(),
     }
+
+
+def monthly_trend(df):
+    series = (
+        df.assign(month=pd.to_datetime(df["date"]).dt.to_period("M"))
+        .groupby("month")["total_amount"]
+        .sum()
+    )
+    series.index = series.index.astype(str)
+    return series
