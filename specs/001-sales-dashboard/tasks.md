@@ -58,11 +58,11 @@ description: "Task list for Sales Dashboard implementation"
 
 ### Implementation for User Story 1
 
-- [ ] T014 [US1] Write `kpi_metrics(df)` in `data.py` that returns a dict with keys `total_sales` (`df["total_amount"].sum()`) and `total_orders` (`df["order_id"].nunique()`)
-- [ ] T015 [US1] Write `st.set_page_config(page_title="ShopSmart Dashboard", layout="wide")` call at top of `app.py`
-- [ ] T016 [US1] Write `st.title("ShopSmart Sales Dashboard")` header and one-line subtitle in `app.py`
-- [ ] T017 [US1] Call `generate_data()` and `kpi_metrics()`, then render two `st.metric()` cards inside `st.columns(2)` in `app.py`
-- [ ] T018 [US1] Format `total_sales` as a currency string `f"${total_sales:,.0f}"` before passing to `st.metric()` in `app.py`
+- [x] T014 [US1] Write `kpi_metrics(df)` in `data.py` that returns a dict with keys `total_sales` (`df["total_amount"].sum()`) and `total_orders` (`df["order_id"].nunique()`)
+- [x] T015 [US1] Write `st.set_page_config(page_title="ShopSmart Dashboard", layout="wide")` call at top of `app.py`
+- [x] T016 [US1] Write `st.title("ShopSmart Sales Dashboard")` header and one-line subtitle in `app.py`
+- [x] T017 [US1] Call `generate_data()` and `kpi_metrics()`, then render two `st.metric()` cards inside `st.columns(2)` in `app.py`
+- [x] T018 [US1] Format `total_sales` as a currency string `f"${total_sales:,.0f}"` before passing to `st.metric()` in `app.py`
 
 **Checkpoint**: `streamlit run app.py` → dark background, dashboard title, and two KPI metric cards (Total Sales ≈ $650K–$700K, Total Orders ≈ 480–520).
 

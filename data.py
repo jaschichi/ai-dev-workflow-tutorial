@@ -79,3 +79,10 @@ def generate_data(seed=42):
         "unit_price": unit_prices,
         "total_amount": total_amounts,
     })
+
+
+def kpi_metrics(df):
+    return {
+        "total_sales": df["total_amount"].sum(),
+        "total_orders": df["order_id"].nunique(),
+    }
